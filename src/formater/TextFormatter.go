@@ -85,7 +85,7 @@ func New(text string) *TextFormatter {
 	}
 
 	formatter.text = text
-	formatter.size = len(text)
+	formatter.size = len([]rune(text))
 
 	return formatter
 }
